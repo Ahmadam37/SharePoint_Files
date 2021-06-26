@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <style>
+    @font-face {
+      font-family: 'DINNextLTArabic-Regular';
+      src: url('siteassets/fonts/DINNextLTArabic-Regular.eot');
+      src: url('siteassets/fonts/DINNextLTArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('siteassets/fonts/DINNextLTArabic-Regular.svg#DINNextLTArabic-Regular') format('svg'),
+        url('siteassets/fonts/DINNextLTArabic-Regular.ttf') format('truetype'),
+        url('siteassets/fonts/DINNextLTArabic-Regular.woff') format('woff'),
+        url('siteassets/fonts/DINNextLTArabic-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Roboto-Thin';
+      src: url('siteassets/fonts/Roboto-Thin.eot');
+      src: url('siteassets/fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('siteassets/fonts/Roboto-Thin.svg#Roboto-Thin') format('svg'),
+        url('siteassets/fonts/Roboto-Thin.ttf') format('truetype'),
+        url('siteassets/fonts/Roboto-Thin.woff') format('woff'),
+        url('siteassets/fonts/Roboto-Thin.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #s4-workspace {
+      background-color: rgba(250, 250, 250, 0.85);
+    }
+
+    #s4-ribbonrow {
+      DISPLAY: none !important;
+    }
+
+    #suiteBarTop {
+      DISPLAY: none !important;
+
+    }
+
+    #s4-titlerow {
+      /* height: 2px !important; */
+      DISPLAY: none !important;
+    }
+
+    #suiteBarDelta {
+      DISPLAY: none !important;
+    }
+
+    #O365_NavHeader {
+      display: none;
+    }
+
+    #DeltaPageStatusBar {
+      display: none;
+    }
+
+    #titleAreaBox {
+      display: none !important;
+    }
+
+    .ms-webpartPage-root {
+      border-spacing: 0px !important;
+    }
+
+    .ms-webpartzone-cell {
+      margin: 0px !important;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: DIN Next LT Arabic !important;
+    }
+
+
+    .top {
+      background-color: rgb(255, 255, 255);
+      border-bottom: 1px solid #dfdfdf;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0.00);
+      z-index: 2;
+      /* overflow: auto; */
+      height: 75px;
+    }
+
+    .ElmLogo {
+      float: left;
+      width: 122px;
+      height: inherit;
+      margin: 0 auto;
+      padding: 0px;
+
+    }
+
+    .ElmLogo ul {
+      height: inherit;
+      width: inherit;
+      margin: 0 auto;
+      background-color: inherit;
+      padding: 0px;
+
+    }
+
+    .ElmLogo ul li {
+      display: inline-block;
+      width: inherit;
+      color: gray;
+      cursor: default;
+      transition: background 0.1s linear;
+      margin: 0 auto;
+    }
+
+    .ElmLogo :hover {
+      background-color: rgba(240, 240, 240, 0.80);
+      border-radius: 2px;
+    }
+
+    .ElmLogo ul li a {
+      width: inherit;
+      height: 60px;
+    }
+
+    .ElmLogo ul li a img {
+      width: 60px;
+      height: 60px;
+      margin: 10px 0px 0px 25px;
+      /* padding: 10px 0px 0px 25px; */
+    }
+
+    /*left side div*/
+
+    .Epmv4TopMenu {
+      float: left;
+      width: 80%;
+      height: inherit;
+      margin-left: 55px;
+    }
+
+    .Epmv4TopMenu .leftDiv {
+      float: left;
+      height: inherit;
+      width: 10%;
+      margin: 0px auto;
+      padding: 0px;
+    }
+
+    .Epmv4TopMenu .leftDiv ul {
+      margin: 0px auto;
+      list-style: none;
+      padding: 0;
+      height: inherit;
+      background-color: inherit;
+    }
+
+
+    .Epmv4TopMenu .leftDiv ul li {
+      display: inline-block;
+      height: inherit;
+      width: 60px;
+      color: gray;
+      /* cursor: default; */
+      transition: background 0.1s linear;
+      margin: 0 auto;
+    }
+
+    .Epmv4TopMenu .leftDiv ul li:hover {
+      background-color: rgba(240, 240, 240, 0.80);
+      border-radius: 2px;
+    }
+
+    .Epmv4TopMenu .leftDiv ul li a img {
+      padding: 20px 0 0 14px;
+      width: 32px;
+      height: 32px;
+    }
+
+    /*right side*/
+    .Epmv4TopMenu .rightDiv {
+      float: right;
+      height: inherit;
+      width: 30%;
+      margin: 0px auto;
+      padding: 0px;
+    }
+
+    .Epmv4TopMenu .rightDiv ul {
+      position: relative;
+      text-align: center;
+      color: gray;
+      cursor: default;
+      transition: background 0.1s linear;
+      min-width: 200px;
+      height: inherit;
+      float: right;
+      margin: 0 auto;
+      padding: 0px;
+    }
+
+    .Epmv4TopMenu .rightDiv ul li {
+      display: inline-block;
+      width: 60px;
+      height: inherit;
+      color: gray;
+      /* cursor: default; */
+      transition: background 0.1s linear;
+      margin: 0 auto;
+    }
+
+    .Epmv4TopMenu .rightDiv ul li:hover {
+      background-color: rgba(240, 240, 240, 0.80);
+      border-radius: 2px;
+    }
+
+    .Epmv4TopMenu .rightDiv ul li a {
+      margin: 20px 0px 0px 0px;
+      height: 45px;
+      width: 45px;
+    }
+
+    .Epmv4TopMenu .rightDiv ul li a img {
+      /* padding: 18px 0 0 0; */
+      width: 32px;
+      height: 32px;
+      margin: inherit;
+
+    }
+  </style>
+
+  <script language="javascript" src="/_layouts/15/SP.RequestExecutor.js" type="text/javascript"></script>
+  <script language="javascript" src="/pwa/siteassets/elm-jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script language="javascript" type="text/javascript">
+
+    function createNewProject() {
+      SP.UI.ModalDialog.ShowPopupDialog(
+        "https://k2.elm.sa/runtime/Runtime/Form/Project+Request+Form_2E"
+      );
+    }
+
+    _spBodyOnLoadFunctionNames.push("UpdateEpmStyle");
+
+
+    function getQueryStringParameter(myParam) {
+      if (document.URL.indexOf("?") > 0) {
+        var params = document.URL.split("?")[1].split("&");
+
+        for (var i = 0; i < params.length; i = i + 1) {
+          var singleParam = params[i].split("=");
+
+          if (singleParam[0].toLowerCase() == myParam.toLowerCase())
+            return singleParam[1];
+        }
+      }
+    }
+
+    function UpdateEpmStyle() {
+
+      // var ribbonBox = document.getElementById("s4-ribbonrow").style.visibility = "hidden";
+
+      // var suiteBarTop = document.getElementById("suiteBarTop").style.height = "1px";
+      // var suiteBarTop = document.getElementById("suiteBarTop").style.visibility = "hidden";
+      // var s4titlerow = document.getElementById("s4-titlerow").style.height = "1px";
+      var s4titlerow = document.getElementById("s4-titlerow").style.visibility = "hidden";
+      // var s4titlerow = document.getElementById("s4-titlerow").style.paddingTop = "1px";
+      // var s4titlerow = document.getElementById("s4-titlerow").style.paddingBottom = "1px";
+      //#contentRow
+      //#contentRow
+      var contentRow = document.getElementById("contentRow").style.paddingTop = "0px";
+      var contentRow = document.getElementById("contentRow").style.backgroundColor = "#fafafa";
+
+      //#contentBox
+      var contentBox = document.getElementById("contentBox").style.marginLeft = "0px";
+      var contentBox = document.getElementById("contentBox").style.marginRight = "0px";
+
+      //#sideNavBox  
+      //var sideNavBox = document.getElementById("sideNavBox").style.display = "none";
+      var sideNavBox = document.getElementById("sideNavBox").style.visibility = "hidden";
+      // //#contentBox
+      // var contentBox = document.getElementById("contentBox").style.marginLeft = "0px";
+      // var contentBox = document.getElementById("contentBox").style.marginRight = "0px";
+
+      // //#sideNavBox  
+      // var sideNavBox = document.getElementById("sideNavBox").style.display = "none";
+
+      // //#s4-titlerow
+      // var s4titlerow = document.getElementById("s4-titlerow").style.height = "2px!important";
+
+      // //#suiteBarDelta
+      // //DISPLAY: none!important;
+      // var suiteBarDelta = document.getElementById("suiteBarDelta").style.visibility = "hidden";
+
+      // //#O365_NavHeader
+      // //DISPLAY: none!important;
+      // var O365_NavHeader = document.getElementById("O365_NavHeader").style.visibility = "hidden";
+
+      // //#DeltaPageStatusBar
+      // //DISPLAY: none!important;
+      // var DeltaPageStatusBar = document.getElementById("DeltaPageStatusBar").style.visibility = "hidden";
+
+      // //#titleAreaBox
+      // //DISPLAY: none!important;
+      // var titleAreaBox = document.getElementById("titleAreaBox").style.visibility = "hidden";
+
+
+    }
+
+
+    function openTicketPopup() {
+      SP.UI.ModalDialog.ShowPopupDialog(
+        "https://k2.elm.sa/Runtime/Runtime/Form/Form.Ticket.Main/"
+      );
+    }
+    function openTicket() {
+      SP.UI.ModalDialog.showModalDialog(
+        {
+          url: "https://k2.elm.sa/Runtime/Runtime/Form/Form.Ticket.Main/",
+          width: 800,
+          height: 800,
+          title: "Open a Ticket for PMO-Tech"
+        }
+      );
+    }
+
+  </script>
+
+
+  <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">7CP4ZU5533QS-1271-374</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f207f1f6-1fbd-4153-8e8b-92e46d30331e</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://nahj.elm.sa/PWA/_layouts/15/DocIdRedir.aspx?ID=7CP4ZU5533QS-1271-374, 7CP4ZU5533QS-1271-374</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+  <div class="top">
+    <!-- logo -->
+    <div class="ElmLogo">
+      <ul>
+        <li>
+          <a href="https://nahj.elm.sa/PWA/">
+
+            <img src="SiteAssets/Elm_Small_RGB.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="Epmv4TopMenu">
+      <div class="leftDiv">
+        <!-- left side -->
+        <ul>
+          <!-- <li class="menu"> -->
+          <!-- <a href="https://epmdev.elm.sa/PWA/"> -->
+
+          <!-- <img src="../SiteAssets/epmv4/img/home128.png" alt=""> -->
+          <!-- </a> -->
+          <!-- </li> -->
+        </ul>
+      </div>
+      <div class="rightDiv">
+        <!-- right side -->
+        <ul>
+          <li class="settings">
+            <a href="https://k2.elm.sa/workspace/" title="K2 Server">
+
+              <img src="SiteAssets/epmv4/img/k2128.png" alt="">
+            </a>
+          </li>
+
+
+          <li class="settings">
+            <a id="openT" onclick="openTicket()" title="Open Ticket">
+              <img src="SiteAssets/epmv4/img/support.png" alt="Request Support" />
+              <!-- onmouseover="this.src='SiteAssets/epmv4/img/ticket.png'"
+            onmouseout="this.src='SiteAssets/epmv4/img/ticketgrey.png'" alt="">-->
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
