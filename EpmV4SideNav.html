@@ -1,0 +1,222 @@
+<!DOCTYPE  html>
+<html lang="en">
+
+<head>
+    <style>
+        .base {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 9.5;
+            font-size: 1em;
+            width: 80px;
+            height: 100px;
+            margin: 150px 100px 100px 0px;
+            transition: background 0.5s linear;
+            background-color: transparent;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            
+        }
+        
+        .NewProject {
+            content: '';
+            /* width: 48px; */
+            height: 90px;
+            position: absolute;
+            top: 1%;
+            background-repeat: no-repeat;
+            background-size: 48px;
+            transition: background 0.5s linear;
+            /* margin-left: 48px; */
+            margin-top: 130px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            left: 1%;
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/plusGrey.png);
+            text-decoration: none;
+        }
+        
+        .NewProject  a {
+            content: ''; 
+            text-decoration: none;
+            color: grey;
+        }
+        .NewProject:hover  a {
+            content: ''; 
+            text-decoration: none;
+            color:rgb(96, 77, 218);
+        }
+        .NewProject:hover {
+            /* -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/plus.png);
+        }
+        
+        .MyRequest {
+            content: '';
+            /* width: 70px; */
+            height: 90px;
+            position: absolute;
+            top: 1%;
+            background-repeat: no-repeat;
+            background-size: 48px;
+            transition: background 0.5s linear;
+            margin-top: 230px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            left: 1%;
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/Greycompleted129.png);
+        }
+        .MyRequest  a {
+            content: ''; 
+            text-decoration: none;
+            color: grey;
+        }
+        .MyRequest:hover {
+            /* -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/completed128.png);
+        }
+        .MyRequest:hover  a {
+            content: ''; 
+            text-decoration: none;
+            color:rgb(96, 77, 218);
+        }
+        .Projects {
+            content: '';
+            width: 48px;
+            height: 90px;
+            position: absolute;
+            top: 1%;
+            background-repeat: no-repeat;
+            background-size: 48px;
+            transition: background 0.5s linear;
+            margin-top: 330px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            left: 1%;
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/Greyproject.png);
+        }
+        .Projects  a {
+            content: ''; 
+            text-decoration: none;
+            color: grey;
+        }
+        .Projects:hover  a {
+            content: ''; 
+            text-decoration: none;
+            color:rgb(96, 77, 218);
+        }
+        .Projects:hover {
+            /* -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/project%202016.png);
+        }
+        
+        .Dashboard {
+            content: '';
+            width: 66px;
+            height: 90px;
+            position: absolute;
+            top: 1%;
+            background-repeat: no-repeat;
+            background-size: 48px;
+            transition: background 0.5s linear;
+            margin-top: 440px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            left: 1%;
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/Greydashboard129.png);
+        }
+        .Dashboard  a {
+            content: ''; 
+            text-decoration: none;
+            color: grey;
+        }
+        .Dashboard:hover  a {
+            content: ''; 
+            text-decoration: none;
+            color: rgb(96, 77, 218);
+        }
+        .Dashboard:hover {
+            /* -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/dashboard128.png);
+        }
+        
+        .MyTasks {
+            content: '';
+            width: 48px;
+            height: 90px;
+            position: absolute;
+            top: 1%;
+            background-repeat: no-repeat;
+            background-size: 48px;
+            transition: background 0.5s linear;
+            margin-top: 550px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+            border-radius: 8px;
+            left: 1%;
+            text-decoration: none;
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/Greychecklist129.png);
+            
+        }
+        .MyTasks  a {
+            content: ''; 
+            text-decoration: none;
+            color: grey;
+        }
+        .MyTasks:hover  a {
+            content: ''; 
+            text-decoration: none;
+            color: rgb(96, 77, 218);
+        }
+        .MyTasks:hover {
+            /* -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            background-image: url(http://elm-epm-dev-02/PWA/siteassets/icons/checklist128.png);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <i class="base NewProject" > <a href="www.google.com">New Project</a> </i>
+    </div>
+    <div>
+        <i class="base MyRequest"><a href="www.google.com">MyRequest</a> </i>
+
+    </div>
+    <div>
+        <i class="base Projects"> <a href="www.google.com">Projects</a> </i>
+    </div>
+    <div>
+        <i class="base Dashboard"><a href="www.google.com">Dashboard</a> </i>
+    </div>
+    <div>
+        <i class="base MyTasks"> <a href="www.google.com">MyTasks</a> </i>
+    </div>
+</body>
+
+</html>

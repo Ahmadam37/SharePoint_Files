@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-family: DIN Next LT Arabic, sans-serif;
+        }
+        
+        p {
+            font-family: DIN Next LT Arabic, sans-serif;
+            font-size: 11pt;
+        }
+        
+        ol {
+            font-family: DIN Next LT Arabic, sans-serif;
+            font-size: 10pt;
+        }
+        
+        table {
+            font-family: DIN Next LT Arabic, sans-serif;
+            font-size: 10pt;
+            border-width: 1px 1px 1px 1px;
+            border-color: #E8EDF0;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        
+        td {
+            border-width: 0px 1px 0px 0px;
+            border-color: #E8EDF0;
+            border-style: solid;
+        }
+        
+        thead tr th {
+            border-style: none;
+        }
+        
+        tbody tr {
+            border-width: 1px 1px 1px 1px;
+            border-color: #E8EDF0;
+            border-style: solid;
+        }
+        
+        #btnLink {
+            width: 140px;
+            height: 90px;
+            color: rgb(129, 144, 153);
+            font-size: 16px;
+            text-align: center;
+            transition: background 0.5s linear, color 0.1s linear;
+            border-color: #E8EDF0;
+            border-width: 1px;
+            border-style: solid;
+            display: block;
+            margin-left: 180px;
+        }
+        
+        #btnLink:hover {
+            background-color: #942d98;
+            color: #ffffff
+        }
+        
+        #aLink {
+            color: #1f1656;
+            transition: background 0.5s linear;
+        }
+        
+        #aLink:hover {
+            color: #ffffff
+        }
+    </style>
+</head>
+
+<body>
+    <p><img alt="Sample image" src="data:image/png;base64,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"
+            style="float:right; height:128px&quot;; margin-left:20px; margin-right:20px; width:128px" /></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <h1 hidden="true">Epm - Project Request Approval</h1>
+
+    <p>Dear $$Project Dispatcher$$ </p>
+
+    <p>The project request $$no.$$ is pending your action to assign the following:</p>
+
+    <ol>
+        <li>Project Manager</li>
+        <li>Project Sponsor</li>
+    </ol>
+
+
+    <div id="BtnLink" style="padding:60px 10px 0px 10px;" onclick="">
+        Open Approval Form
+    </div>
+
+
+    <p>Also you can check and update any of the project request information to help keeping data consistent on the system.&nbsp;</p>
+
+    <table border="1" cellpadding="1" cellspacing="1" style="width:600px" summary="Project Details">
+        <thead>
+            <tr>
+                <th scope="col" width="200px">Information</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Client Name:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Project Name:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Business Name</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Project Value:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Duration:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Project Template:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Project Type:</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>In case you face a problem or have a question, kindly contact us via :</p>
+
+    <p>e-mail&nbsp;: PMO-Tech@elm.sa</p>
+
+    <p>PMO Team Hotline: 766&nbsp;</p>
+
+    <table align="center" cellspacing="0" class="Table" dir="rtl" style="border-collapse:collapse; border:undefined; width:100%">
+        <tbody>
+            <tr>
+                <td style="background-color:#1f1656">
+                    <p dir="RTL" style="text-align:center"><span style="color:#ffffff">جميع الحقوق محفوظة&nbsp;2019</span></p>
+
+                    <p dir="LTR" style="text-align:center"><span style="color:#ffffff">Copyright 2019</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:#942d98">
+                    <p dir="RTL" style="text-align:center"><span style="color:#ffffff">تذكير: محتوى هذا الإعلان سرّي وخاص لموظفي الشركة وغير قابل للتداول خارجها.</span></p>
+
+                    <p dir="RTL" style="text-align:center"><span style="color:#ffffff">Reminder: This announcement is confidential and intended to company employees only</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

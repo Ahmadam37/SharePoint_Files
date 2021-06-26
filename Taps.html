@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container,
+        .containerDashboard,
+        .containerTasks,
+        .containerResource {
+            position: relative;
+            width: 10%;
+            margin: 20px 0 20px 0;
+            bottom: -120px;
+        }
+        
+        .image {
+            display: block;
+            width: 27%;
+            height: 40px;
+            background-image: url('../SharePoint/projects.png');
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+            mix-blend-mode: hue;
+        }
+        
+        .container :hover .image {
+            display: block;
+            width: 27px;
+            height: 40px;
+            background-image: url('../SharePoint/Dashboard.png');
+        }
+        
+        .container:hover .overlay {
+            width: 60%;
+        }
+        
+        .container:hover .image {
+            background-color: blueviolet;
+        }
+        
+        .containerDashboard:hover .overlay {
+            width: 60%;
+        }
+        
+        .containerDashboard:hover .image {
+            background-color: blueviolet;
+        }
+        
+        .containerResource:hover .overlay {
+            width: 60%;
+        }
+        
+        .containerResource:hover .image {
+            background-color: blueviolet;
+        }
+        
+        .containerTasks:hover .overlay {
+            width: 60%;
+        }
+        
+        .containerTasks:hover .image {
+            background-color: blueviolet;
+        }
+        
+        .text {
+            font-family: DIN Next LT Arabic, sans-serif;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+        
+        .containerDashboard .button .image {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: white;
+        }
+        /* .containerDashboard button {
+            background: #ffffff;
+            display: block;
+            width: 40%;
+            height: 40px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2>A</h2>
+    <p>.</p> -->
+
+    <div class="container">
+        <img src="http://elm-epm-dev-02/PWA/_layouts/15/DocIdRedir.aspx?ID=7CP4ZU5533QS-1271-185" onmouseover="this.src='C:/Users/abinmana/Desktop/SharePoint/Dashboard.png'" onmouseout="this.src='C:/Users/abinmana/Desktop/SharePoint/projects.png'" alt="Avatar"
+            class="image">
+        <div class="overlay">
+            <div class="text">Projects</div>
+        </div>
+    </div>
+
+    <div class="containerDashboard">
+        <img src="C:/Users/abinmana/Desktop/SharePoint/Dashboard.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Dashboard</div>
+        </div>
+    </div>
+
+    <div class="containerResource">
+        <img src="C:/Users/abinmana/Desktop/SharePoint/Resource.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Resource</div>
+        </div>
+    </div>
+
+    <div class="containerTasks">
+        <img src="C:/Users/abinmana/Desktop/SharePoint/Tasks.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Tasks</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
